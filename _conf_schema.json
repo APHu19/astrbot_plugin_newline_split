@@ -1,0 +1,36 @@
+{
+  "enable": {
+    "type": "bool",
+    "description": "启用按换行分段发送",
+    "default": true
+  },
+  "split_mode": {
+    "type": "string",
+    "description": "切分粒度",
+    "default": "any_newline",
+    "options": ["any_newline", "blank_line"],
+    "hint": "any_newline：每个换行都切（连续空行只算一个切点）；blank_line：只在空行处切，单换行留在段内"
+  },
+  "only_llm": {
+    "type": "bool",
+    "description": "只处理大模型回复",
+    "default": true,
+    "hint": "关闭后，命令输出等所有 bot 消息也会被切分"
+  },
+  "interval_min": {
+    "type": "float",
+    "description": "分段间隔下限（秒）",
+    "default": 1.5
+  },
+  "interval_max": {
+    "type": "float",
+    "description": "分段间隔上限（秒）",
+    "default": 3.5
+  },
+  "max_segments": {
+    "type": "int",
+    "description": "最大分段数",
+    "default": 10,
+    "hint": "超出的部分自动并入最后一段，避免一次刷出几十条消息"
+  }
+}

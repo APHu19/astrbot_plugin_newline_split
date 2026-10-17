@@ -1,0 +1,7 @@
+name: astrbot_plugin_newline_split
+display_name: 按换行分段发送
+desc: 检测 bot 回复中的换行，在换行处把一条消息拆成多段依次发出。
+version: 1.0.0
+author: wuwabot
+support_platforms:
+  - aiocqhttp
