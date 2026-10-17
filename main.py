@@ -20,7 +20,7 @@ _PRIORITY = -100000
 
 @register(
     "astrbot_plugin_newline_split",
-    "wuwabot",
+    "APHu19",
     "按换行把一条回复拆成多条消息依次发出",
     "1.0.0",
 )
